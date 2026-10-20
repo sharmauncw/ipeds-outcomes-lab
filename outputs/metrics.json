@@ -1,0 +1,470 @@
+{
+  "clustering": {
+    "year": 2022,
+    "features": [
+      "log_enrollment",
+      "admission_rate",
+      "retention_ft",
+      "pell_share_ug",
+      "log_instruction_per_fte",
+      "student_faculty_ratio",
+      "grad_share_of_total",
+      "ug_share_black",
+      "ug_share_hispanic"
+    ],
+    "n_institutions_clustered": 1753,
+    "n_four_year_total": 1753,
+    "feature_coverage": {
+      "log_enrollment": 1.0,
+      "admission_rate": 1.0,
+      "retention_ft": 0.964,
+      "pell_share_ug": 0.986,
+      "log_instruction_per_fte": 0.79,
+      "student_faculty_ratio": 1.0,
+      "grad_share_of_total": 1.0,
+      "ug_share_black": 1.0,
+      "ug_share_hispanic": 1.0
+    },
+    "silhouette_by_k": {
+      "3": 0.157,
+      "4": 0.199,
+      "5": 0.169,
+      "6": 0.161,
+      "7": 0.162,
+      "8": 0.138
+    },
+    "chosen_k": 4,
+    "chosen_silhouette": 0.199,
+    "cluster_sizes": {
+      "0": 357,
+      "1": 127,
+      "2": 1028,
+      "3": 241
+    }
+  },
+  "eda": {
+    "panel_rows_total": 60885,
+    "institutions_total": 8670,
+    "four_year_rows": 27005,
+    "four_year_institutions_latest": 2859,
+    "median_grad_rate_150_by_year": {
+      "2015": 47.1,
+      "2016": 48.2,
+      "2017": 49.4,
+      "2018": 50.0,
+      "2019": 51.4,
+      "2020": 52.0,
+      "2021": 53.1,
+      "2022": 52.6,
+      "2023": 52.4
+    },
+    "median_retention_by_year": {
+      "2015": 74.0,
+      "2016": 75.0,
+      "2017": 75.0,
+      "2018": 75.0,
+      "2019": 75.0,
+      "2020": 75.0,
+      "2021": 74.0,
+      "2022": 74.0,
+      "2023": 75.0
+    },
+    "correlations_with_grad_rate_2022": {
+      "admission_rate": -0.319,
+      "sat_total_mid": 0.816,
+      "retention_ft": 0.524,
+      "pell_share_ug": -0.372,
+      "instruction_per_fte": 0.348,
+      "student_faculty_ratio": -0.184
+    },
+    "median_grad_rate_2022_by_control": {
+      "Public": 47.0,
+      "Private nonprofit": 57.3,
+      "Private for-profit": 50.0
+    },
+    "race_medians_by_year": {
+      "White": {
+        "2015": 55.9,
+        "2016": 56.6,
+        "2017": 57.4,
+        "2018": 59.6,
+        "2019": 60.8,
+        "2020": 61.1,
+        "2021": 61.4,
+        "2022": 61.3,
+        "2023": 61.3
+      },
+      "Black": {
+        "2015": 38.1,
+        "2016": 40.0,
+        "2017": 40.0,
+        "2018": 41.9,
+        "2019": 43.4,
+        "2020": 42.5,
+        "2021": 44.3,
+        "2022": 42.3,
+        "2023": 41.7
+      },
+      "Hispanic": {
+        "2015": 46.9,
+        "2016": 47.5,
+        "2017": 48.2,
+        "2018": 50.0,
+        "2019": 50.0,
+        "2020": 50.0,
+        "2021": 51.2,
+        "2022": 52.0,
+        "2023": 50.0
+      },
+      "Asian": {
+        "2015": 56.8,
+        "2016": 60.0,
+        "2017": 60.0,
+        "2018": 62.5,
+        "2019": 65.8,
+        "2020": 65.0,
+        "2021": 66.7,
+        "2022": 66.7,
+        "2023": 66.7
+      }
+    },
+    "race_gap_2023_pp": {
+      "white_minus_black": 19.6,
+      "white_minus_hispanic": 11.3
+    },
+    "median_instruction_per_fte_2022": 10480.0,
+    "n_2022_cross_section": 2863,
+    "median_grad_rate_100_by_year": {
+      "2015": 32.1,
+      "2016": 33.3,
+      "2017": 34.6,
+      "2018": 36.5,
+      "2019": 38.3,
+      "2020": 39.6,
+      "2021": 40.6,
+      "2022": 40.9,
+      "2023": 40.7
+    }
+  },
+  "model": {
+    "target": "grad_rate_150",
+    "min_cohort": 50,
+    "train_years": "2015-2019",
+    "test_years": "2021-2023 (2020 excluded)",
+    "n_train": 9474,
+    "n_test": 5389,
+    "model": "HistGradientBoostingRegressor(500 iters, lr=0.06)",
+    "shap_model": "HistGradientBoostingRegressor",
+    "test_metrics": {
+      "r2": 0.745,
+      "mae_pp": 7.15,
+      "rmse_pp": 10.01
+    },
+    "baseline_median": {
+      "r2": -0.015,
+      "mae_pp": 16.3,
+      "rmse_pp": 19.97
+    },
+    "baseline_sector_mean": {
+      "r2": 0.054,
+      "mae_pp": 15.59,
+      "rmse_pp": 19.27
+    },
+    "grouped_cv_r2_train": [
+      0.756,
+      0.78,
+      0.791,
+      0.782,
+      0.784
+    ],
+    "grouped_cv_r2_mean": 0.779,
+    "top_shap_features": [
+      {
+        "feature": "retention_ft",
+        "mean_abs_shap": 9.49
+      },
+      {
+        "feature": "control_Private nonprofit",
+        "mean_abs_shap": 2.09
+      },
+      {
+        "feature": "admission_rate",
+        "mean_abs_shap": 1.69
+      },
+      {
+        "feature": "pell_share_ug",
+        "mean_abs_shap": 1.63
+      },
+      {
+        "feature": "ug_share_black",
+        "mean_abs_shap": 1.61
+      },
+      {
+        "feature": "sat_total_mid",
+        "mean_abs_shap": 1.47
+      },
+      {
+        "feature": "log_enrollment",
+        "mean_abs_shap": 0.97
+      },
+      {
+        "feature": "log_instruction_per_fte",
+        "mean_abs_shap": 0.93
+      }
+    ],
+    "fairness_slices": {
+      "control": {
+        "Private for-profit": {
+          "n": 264,
+          "mae_pp": 13.85
+        },
+        "Private nonprofit": {
+          "n": 2959,
+          "mae_pp": 6.65
+        },
+        "Public": {
+          "n": 2166,
+          "mae_pp": 7.0
+        }
+      },
+      "pell_tercile": {
+        "low Pell": {
+          "n": 1213,
+          "mae_pp": 5.23
+        },
+        "mid Pell": {
+          "n": 1205,
+          "mae_pp": 6.7
+        },
+        "high Pell": {
+          "n": 1127,
+          "mae_pp": 8.52
+        }
+      }
+    },
+    "largest_overpredictions": [
+      {
+        "institution_name": "Northwestern College",
+        "state": "IL",
+        "year": 2021,
+        "actual": 13.20754716981132,
+        "predicted": 64.6
+      },
+      {
+        "institution_name": "Pennsylvania State University-Penn State Lehigh Valley",
+        "state": "PA",
+        "year": 2022,
+        "actual": 12.162162162162163,
+        "predicted": 60.1
+      },
+      {
+        "institution_name": "Pennsylvania State University-Penn State Lehigh Valley",
+        "state": "PA",
+        "year": 2023,
+        "actual": 16.877637130801688,
+        "predicted": 61.4
+      },
+      {
+        "institution_name": "Selma University",
+        "state": "AL",
+        "year": 2021,
+        "actual": 1.4388489208633095,
+        "predicted": 45.1
+      },
+      {
+        "institution_name": "Pennsylvania State University-Penn State Altoona",
+        "state": "PA",
+        "year": 2022,
+        "actual": 15.731292517006803,
+        "predicted": 58.7
+      }
+    ],
+    "largest_underpredictions": [
+      {
+        "institution_name": "Walnut Hill College",
+        "state": "PA",
+        "year": 2022,
+        "actual": 86.53846153846155,
+        "predicted": 12.1
+      },
+      {
+        "institution_name": "Bacone College",
+        "state": "OK",
+        "year": 2022,
+        "actual": 98.7878787878788,
+        "predicted": 31.0
+      },
+      {
+        "institution_name": "Lakewood University",
+        "state": "OH",
+        "year": 2021,
+        "actual": 83.07692307692308,
+        "predicted": 15.2
+      },
+      {
+        "institution_name": "IGlobal University",
+        "state": "VA",
+        "year": 2022,
+        "actual": 77.77777777777779,
+        "predicted": 11.7
+      },
+      {
+        "institution_name": "Associated Beth Rivkah Schools",
+        "state": "NY",
+        "year": 2021,
+        "actual": 92.5925925925926,
+        "predicted": 27.5
+      }
+    ]
+  },
+  "om": {
+    "weighted_gap_trend": [
+      {
+        "survey_year": 2017,
+        "cohort_entry_year": 2009,
+        "pell_rate_8": 38.87,
+        "nonpell_rate_8": 54.4,
+        "n_institutions": 3667,
+        "gap_pp": 15.53
+      },
+      {
+        "survey_year": 2018,
+        "cohort_entry_year": 2010,
+        "pell_rate_8": 39.24,
+        "nonpell_rate_8": 56.56,
+        "n_institutions": 3525,
+        "gap_pp": 17.32
+      },
+      {
+        "survey_year": 2019,
+        "cohort_entry_year": 2011,
+        "pell_rate_8": 39.52,
+        "nonpell_rate_8": 58.97,
+        "n_institutions": 3415,
+        "gap_pp": 19.46
+      },
+      {
+        "survey_year": 2020,
+        "cohort_entry_year": 2012,
+        "pell_rate_8": 41.33,
+        "nonpell_rate_8": 60.27,
+        "n_institutions": 3398,
+        "gap_pp": 18.94
+      },
+      {
+        "survey_year": 2021,
+        "cohort_entry_year": 2013,
+        "pell_rate_8": 42.69,
+        "nonpell_rate_8": 61.65,
+        "n_institutions": 3368,
+        "gap_pp": 18.95
+      },
+      {
+        "survey_year": 2022,
+        "cohort_entry_year": 2014,
+        "pell_rate_8": 44.01,
+        "nonpell_rate_8": 62.29,
+        "n_institutions": 3364,
+        "gap_pp": 18.28
+      },
+      {
+        "survey_year": 2023,
+        "cohort_entry_year": 2015,
+        "pell_rate_8": 45.89,
+        "nonpell_rate_8": 62.24,
+        "n_institutions": 3332,
+        "gap_pp": 16.35
+      }
+    ],
+    "latest_survey_year": 2023,
+    "latest_cohort_entry_year": 2015,
+    "inst_gap_median_pp": 7.7,
+    "inst_gap_iqr_pp": [
+      2.5,
+      13.1
+    ],
+    "share_institutions_pell_ge_nonpell_pct": 16.0,
+    "n_institutions_latest": 2490,
+    "weighted_rates_by_horizon_latest": {
+      "4": {
+        "pell": 34.0,
+        "nonpell": 48.6,
+        "gap_pp": 14.6
+      },
+      "6": {
+        "pell": 44.3,
+        "nonpell": 60.9,
+        "gap_pp": 16.6
+      },
+      "8": {
+        "pell": 45.9,
+        "nonpell": 62.2,
+        "gap_pp": 16.3
+      }
+    },
+    "gap_by_control_latest": {
+      "Private for-profit": {
+        "median_pp": 3.1,
+        "n": 186
+      },
+      "Private nonprofit": {
+        "median_pp": 8.9,
+        "n": 858
+      },
+      "Public": {
+        "median_pp": 7.5,
+        "n": 1446
+      }
+    },
+    "gap_by_carnegie_latest": {
+      "Associate's": {
+        "median_pp": -2.8,
+        "n": 17
+      },
+      "Baccalaureate": {
+        "median_pp": 7.7,
+        "n": 433
+      },
+      "Doctoral": {
+        "median_pp": 8.5,
+        "n": 434
+      },
+      "Master's": {
+        "median_pp": 9.6,
+        "n": 559
+      },
+      "Other/Not classified": {
+        "median_pp": 6.4,
+        "n": 1015
+      },
+      "Special Focus": {
+        "median_pp": 7.9,
+        "n": 31
+      },
+      "Tribal": {
+        "median_pp": 11.2,
+        "n": 1
+      }
+    },
+    "spotlights_latest": {
+      "UNC Wilmington": {
+        "pell_rate_8": 67.3,
+        "nonpell_rate_8": 74.6,
+        "gap_pp": 7.3,
+        "pell_cohort_n": 492
+      },
+      "Trine": {
+        "pell_rate_8": 52.5,
+        "nonpell_rate_8": 68.1,
+        "gap_pp": 15.6,
+        "pell_cohort_n": 160
+      },
+      "Harvard": {
+        "pell_rate_8": 96.6,
+        "nonpell_rate_8": 98.6,
+        "gap_pp": 2.0,
+        "pell_cohort_n": 266
+      }
+    }
+  }
+}

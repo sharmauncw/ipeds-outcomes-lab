@@ -1,0 +1,197 @@
+{
+  "years": {
+    "2015": {
+      "hd": 7647,
+      "adm": 2210,
+      "efa": 7228,
+      "efd": 6914,
+      "gr": 4533,
+      "sfa": 6543,
+      "fin": 6656,
+      "efia": 6951,
+      "panel_rows": 7647,
+      "four_year_rows": 3230,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7513931888544891,
+        "retention_ft": 0.7009287925696595,
+        "admission_rate": 0.5897832817337462,
+        "pell_share_ug": 0.8052631578947368,
+        "instruction_per_fte": 0.5476780185758514
+      }
+    },
+    "2016": {
+      "hd": 7521,
+      "adm": 2068,
+      "efa": 6819,
+      "efd": 6506,
+      "gr": 4359,
+      "sfa": 6394,
+      "fin": 6519,
+      "efia": 6785,
+      "panel_rows": 7521,
+      "four_year_rows": 3216,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7300995024875622,
+        "retention_ft": 0.6803482587064676,
+        "admission_rate": 0.5544154228855721,
+        "pell_share_ug": 0.8053482587064676,
+        "instruction_per_fte": 0.5544154228855721
+      }
+    },
+    "2017": {
+      "hd": 7153,
+      "adm": 2075,
+      "efa": 6676,
+      "efd": 6371,
+      "gr": 4260,
+      "sfa": 6114,
+      "fin": 6192,
+      "efia": 6561,
+      "panel_rows": 7153,
+      "four_year_rows": 3177,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7315077116776834,
+        "retention_ft": 0.6858671702864337,
+        "admission_rate": 0.5618508026440038,
+        "pell_share_ug": 0.794774944916588,
+        "instruction_per_fte": 0.552093169656909
+      }
+    },
+    "2018": {
+      "hd": 6857,
+      "adm": 2038,
+      "efa": 6352,
+      "efd": 6053,
+      "gr": 4016,
+      "sfa": 5909,
+      "fin": 6069,
+      "efia": 6272,
+      "panel_rows": 6857,
+      "four_year_rows": 3000,
+      "coverage_4yr": {
+        "grad_rate_150": 0.753,
+        "retention_ft": 0.7,
+        "admission_rate": 0.591,
+        "pell_share_ug": 0.813,
+        "instruction_per_fte": 0.5746666666666667
+      }
+    },
+    "2019": {
+      "hd": 6559,
+      "adm": 2011,
+      "efa": 6179,
+      "efd": 5885,
+      "gr": 3882,
+      "sfa": 5859,
+      "fin": 6012,
+      "efia": 6169,
+      "panel_rows": 6559,
+      "four_year_rows": 2927,
+      "coverage_4yr": {
+        "grad_rate_150": 0.763580457806628,
+        "retention_ft": 0.7123334472155791,
+        "admission_rate": 0.6016399043389136,
+        "pell_share_ug": 0.8332763922104544,
+        "instruction_per_fte": 0.5859241544243252
+      }
+    },
+    "2020": {
+      "hd": 6440,
+      "adm": 1989,
+      "efa": 6129,
+      "efd": 5845,
+      "gr": 3852,
+      "sfa": 5779,
+      "fin": 5922,
+      "efia": 6086,
+      "panel_rows": 6440,
+      "four_year_rows": 2893,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7656412029035603,
+        "retention_ft": 0.7196681645350846,
+        "admission_rate": 0.6052540615278258,
+        "pell_share_ug": 0.8434151399930868,
+        "instruction_per_fte": 0.5928102315935015
+      }
+    },
+    "2021": {
+      "hd": 6289,
+      "adm": 1981,
+      "efa": 6049,
+      "efd": 5770,
+      "gr": 3800,
+      "sfa": 5709,
+      "fin": 5838,
+      "efia": 6036,
+      "panel_rows": 6289,
+      "four_year_rows": 2840,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7742957746478873,
+        "retention_ft": 0.7281690140845071,
+        "admission_rate": 0.6140845070422535,
+        "pell_share_ug": 0.8528169014084507,
+        "instruction_per_fte": 0.6045774647887324
+      }
+    },
+    "2022": {
+      "hd": 6256,
+      "adm": 1991,
+      "efa": 5978,
+      "efd": 5706,
+      "gr": 3784,
+      "sfa": 5653,
+      "fin": 5772,
+      "efia": 5959,
+      "panel_rows": 6256,
+      "four_year_rows": 2863,
+      "coverage_4yr": {
+        "grad_rate_150": 0.779252532308767,
+        "retention_ft": 0.7310513447432763,
+        "admission_rate": 0.6126440796367447,
+        "pell_share_ug": 0.8529514495284667,
+        "instruction_per_fte": 0.6025148445686342
+      }
+    },
+    "2023": {
+      "hd": 6163,
+      "adm": 1972,
+      "efa": 5913,
+      "efd": 5646,
+      "gr": 3726,
+      "sfa": 0,
+      "fin": 0,
+      "efia": 5861,
+      "panel_rows": 6163,
+      "four_year_rows": 2859,
+      "coverage_4yr": {
+        "grad_rate_150": 0.7750961874781392,
+        "retention_ft": 0.7233298356068556,
+        "admission_rate": 0.6100034977264778,
+        "pell_share_ug": 0.0,
+        "instruction_per_fte": 0.0
+      }
+    }
+  },
+  "gr_over100_suppressed": {
+    "2015": 54,
+    "2016": 38,
+    "2017": 25,
+    "2018": 27,
+    "2019": 15,
+    "2020": 15,
+    "2021": 14,
+    "2022": 9,
+    "2023": 12
+  },
+  "efia_fte_source": {
+    "2015": "EFTEUG+EFTEGD",
+    "2016": "EFTEUG+EFTEGD",
+    "2017": "EFTEUG+EFTEGD",
+    "2018": "EFTEUG+EFTEGD",
+    "2019": "EFTEUG+EFTEGD",
+    "2020": "EFTEUG+EFTEGD",
+    "2021": "EFTEUG+EFTEGD",
+    "2022": "EFTEUG+EFTEGD",
+    "2023": "EFTEUG+EFTEGD"
+  }
+}

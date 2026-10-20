@@ -1,0 +1,509 @@
+{
+  "source": "NCES IPEDS Data Center bulk downloads",
+  "base_url": "https://nces.ed.gov/ipeds/datacenter/data",
+  "files": [
+    {
+      "stem": "ADM2015",
+      "status": "cached",
+      "bytes": 211410
+    },
+    {
+      "stem": "ADM2016",
+      "status": "cached",
+      "bytes": 196060
+    },
+    {
+      "stem": "ADM2017",
+      "status": "cached",
+      "bytes": 185982
+    },
+    {
+      "stem": "ADM2018",
+      "status": "cached",
+      "bytes": 173693
+    },
+    {
+      "stem": "ADM2019",
+      "status": "cached",
+      "bytes": 172014
+    },
+    {
+      "stem": "ADM2020",
+      "status": "cached",
+      "bytes": 167475
+    },
+    {
+      "stem": "ADM2021",
+      "status": "cached",
+      "bytes": 163516
+    },
+    {
+      "stem": "ADM2022",
+      "status": "cached",
+      "bytes": 194294
+    },
+    {
+      "stem": "ADM2023",
+      "status": "cached",
+      "bytes": 97321
+    },
+    {
+      "stem": "EF2015A",
+      "status": "cached",
+      "bytes": 7290885
+    },
+    {
+      "stem": "EF2015D",
+      "status": "cached",
+      "bytes": 253822
+    },
+    {
+      "stem": "EF2016A",
+      "status": "cached",
+      "bytes": 7066664
+    },
+    {
+      "stem": "EF2016D",
+      "status": "cached",
+      "bytes": 251143
+    },
+    {
+      "stem": "EF2017A",
+      "status": "cached",
+      "bytes": 6624793
+    },
+    {
+      "stem": "EF2017D",
+      "status": "cached",
+      "bytes": 231525
+    },
+    {
+      "stem": "EF2018A",
+      "status": "cached",
+      "bytes": 6046636
+    },
+    {
+      "stem": "EF2018D",
+      "status": "cached",
+      "bytes": 207016
+    },
+    {
+      "stem": "EF2019A",
+      "status": "cached",
+      "bytes": 5956711
+    },
+    {
+      "stem": "EF2019D",
+      "status": "cached",
+      "bytes": 202610
+    },
+    {
+      "stem": "EF2020A",
+      "status": "cached",
+      "bytes": 5816116
+    },
+    {
+      "stem": "EF2020D",
+      "status": "cached",
+      "bytes": 197584
+    },
+    {
+      "stem": "EF2021A",
+      "status": "cached",
+      "bytes": 5750494
+    },
+    {
+      "stem": "EF2021D",
+      "status": "cached",
+      "bytes": 192476
+    },
+    {
+      "stem": "EF2022A",
+      "status": "cached",
+      "bytes": 6000331
+    },
+    {
+      "stem": "EF2022D",
+      "status": "cached",
+      "bytes": 190932
+    },
+    {
+      "stem": "EF2023A",
+      "status": "cached",
+      "bytes": 2979525
+    },
+    {
+      "stem": "EF2023D",
+      "status": "cached",
+      "bytes": 94562
+    },
+    {
+      "stem": "EFIA2016",
+      "status": "cached",
+      "bytes": 202216
+    },
+    {
+      "stem": "EFIA2017",
+      "status": "cached",
+      "bytes": 186499
+    },
+    {
+      "stem": "EFIA2018",
+      "status": "cached",
+      "bytes": 170185
+    },
+    {
+      "stem": "EFIA2019",
+      "status": "cached",
+      "bytes": 163400
+    },
+    {
+      "stem": "EFIA2020",
+      "status": "cached",
+      "bytes": 161316
+    },
+    {
+      "stem": "EFIA2021",
+      "status": "cached",
+      "bytes": 157872
+    },
+    {
+      "stem": "EFIA2022",
+      "status": "cached",
+      "bytes": 155026
+    },
+    {
+      "stem": "EFIA2023",
+      "status": "cached",
+      "bytes": 191187
+    },
+    {
+      "stem": "EFIA2024",
+      "status": "cached",
+      "bytes": 94494
+    },
+    {
+      "stem": "F1516_F1A",
+      "status": "cached",
+      "bytes": 1325059
+    },
+    {
+      "stem": "F1516_F2",
+      "status": "downloaded",
+      "bytes": 1176787
+    },
+    {
+      "stem": "F1516_F3",
+      "status": "downloaded",
+      "bytes": 684010
+    },
+    {
+      "stem": "F1617_F1A",
+      "status": "downloaded",
+      "bytes": 1243489
+    },
+    {
+      "stem": "F1617_F2",
+      "status": "downloaded",
+      "bytes": 1104671
+    },
+    {
+      "stem": "F1617_F3",
+      "status": "downloaded",
+      "bytes": 608137
+    },
+    {
+      "stem": "F1718_F1A",
+      "status": "downloaded",
+      "bytes": 1174455
+    },
+    {
+      "stem": "F1718_F2",
+      "status": "downloaded",
+      "bytes": 1022764
+    },
+    {
+      "stem": "F1718_F3",
+      "status": "downloaded",
+      "bytes": 490882
+    },
+    {
+      "stem": "F1819_F1A",
+      "status": "downloaded",
+      "bytes": 1210575
+    },
+    {
+      "stem": "F1819_F2",
+      "status": "downloaded",
+      "bytes": 1013120
+    },
+    {
+      "stem": "F1819_F3",
+      "status": "downloaded",
+      "bytes": 466858
+    },
+    {
+      "stem": "F1920_F1A",
+      "status": "downloaded",
+      "bytes": 1421820
+    },
+    {
+      "stem": "F1920_F2",
+      "status": "downloaded",
+      "bytes": 1144147
+    },
+    {
+      "stem": "F1920_F3",
+      "status": "downloaded",
+      "bytes": 497138
+    },
+    {
+      "stem": "F2021_F1A",
+      "status": "downloaded",
+      "bytes": 1420852
+    },
+    {
+      "stem": "F2021_F2",
+      "status": "downloaded",
+      "bytes": 1147312
+    },
+    {
+      "stem": "F2021_F3",
+      "status": "downloaded",
+      "bytes": 479497
+    },
+    {
+      "stem": "F2122_F1A",
+      "status": "cached",
+      "bytes": 1431839
+    },
+    {
+      "stem": "F2122_F2",
+      "status": "cached",
+      "bytes": 1139868
+    },
+    {
+      "stem": "F2122_F3",
+      "status": "cached",
+      "bytes": 466096
+    },
+    {
+      "stem": "F2223_F1A",
+      "status": "downloaded",
+      "bytes": 711679
+    },
+    {
+      "stem": "F2223_F2",
+      "status": "downloaded",
+      "bytes": 560124
+    },
+    {
+      "stem": "F2223_F3",
+      "status": "downloaded",
+      "bytes": 228105
+    },
+    {
+      "stem": "F2324_F1A",
+      "status": "unavailable: HTTPError",
+      "bytes": 0
+    },
+    {
+      "stem": "F2324_F2",
+      "status": "unavailable: HTTPError",
+      "bytes": 0
+    },
+    {
+      "stem": "F2324_F3",
+      "status": "unavailable: HTTPError",
+      "bytes": 0
+    },
+    {
+      "stem": "GR2015",
+      "status": "cached",
+      "bytes": 2296144
+    },
+    {
+      "stem": "GR2016",
+      "status": "cached",
+      "bytes": 2256041
+    },
+    {
+      "stem": "GR2017",
+      "status": "cached",
+      "bytes": 2127587
+    },
+    {
+      "stem": "GR2018",
+      "status": "cached",
+      "bytes": 1886476
+    },
+    {
+      "stem": "GR2019",
+      "status": "cached",
+      "bytes": 1841726
+    },
+    {
+      "stem": "GR2020",
+      "status": "cached",
+      "bytes": 1812896
+    },
+    {
+      "stem": "GR2021",
+      "status": "cached",
+      "bytes": 1796811
+    },
+    {
+      "stem": "GR2022",
+      "status": "cached",
+      "bytes": 1758420
+    },
+    {
+      "stem": "GR2023",
+      "status": "cached",
+      "bytes": 913058
+    },
+    {
+      "stem": "HD2015",
+      "status": "cached",
+      "bytes": 1090917
+    },
+    {
+      "stem": "HD2016",
+      "status": "cached",
+      "bytes": 1194954
+    },
+    {
+      "stem": "HD2017",
+      "status": "cached",
+      "bytes": 1147093
+    },
+    {
+      "stem": "HD2018",
+      "status": "cached",
+      "bytes": 1080905
+    },
+    {
+      "stem": "HD2019",
+      "status": "cached",
+      "bytes": 1048337
+    },
+    {
+      "stem": "HD2020",
+      "status": "cached",
+      "bytes": 1032613
+    },
+    {
+      "stem": "HD2021",
+      "status": "cached",
+      "bytes": 1022829
+    },
+    {
+      "stem": "HD2022",
+      "status": "cached",
+      "bytes": 1053927
+    },
+    {
+      "stem": "HD2023",
+      "status": "cached",
+      "bytes": 1110720
+    },
+    {
+      "stem": "OM2016",
+      "status": "cached",
+      "bytes": 594981
+    },
+    {
+      "stem": "OM2017",
+      "status": "cached",
+      "bytes": 3194546
+    },
+    {
+      "stem": "OM2018",
+      "status": "cached",
+      "bytes": 2906148
+    },
+    {
+      "stem": "OM2019",
+      "status": "cached",
+      "bytes": 2822131
+    },
+    {
+      "stem": "OM2020",
+      "status": "cached",
+      "bytes": 2796920
+    },
+    {
+      "stem": "OM2021",
+      "status": "cached",
+      "bytes": 2756816
+    },
+    {
+      "stem": "OM2022",
+      "status": "cached",
+      "bytes": 2732859
+    },
+    {
+      "stem": "OM2023",
+      "status": "cached",
+      "bytes": 1347816
+    },
+    {
+      "stem": "OM2024",
+      "status": "unavailable: HTTPError",
+      "bytes": 0
+    },
+    {
+      "stem": "SFA1516",
+      "status": "cached",
+      "bytes": 4514431
+    },
+    {
+      "stem": "SFA1617",
+      "status": "downloaded",
+      "bytes": 4201151
+    },
+    {
+      "stem": "SFA1718",
+      "status": "downloaded",
+      "bytes": 3801526
+    },
+    {
+      "stem": "SFA1819",
+      "status": "downloaded",
+      "bytes": 3715059
+    },
+    {
+      "stem": "SFA1920",
+      "status": "downloaded",
+      "bytes": 3715947
+    },
+    {
+      "stem": "SFA2021",
+      "status": "downloaded",
+      "bytes": 3662722
+    },
+    {
+      "stem": "SFA2122",
+      "status": "cached",
+      "bytes": 3767187
+    },
+    {
+      "stem": "SFA2223",
+      "status": "downloaded",
+      "bytes": 1913114
+    },
+    {
+      "stem": "SFA2324",
+      "status": "unavailable: HTTPError",
+      "bytes": 0
+    }
+  ],
+  "downloaded_or_cached": 94,
+  "unavailable": [
+    "F2324_F1A",
+    "F2324_F2",
+    "F2324_F3",
+    "OM2024",
+    "SFA2324"
+  ]
+}
