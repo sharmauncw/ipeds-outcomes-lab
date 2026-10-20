@@ -1,0 +1,32 @@
+// IPEDS Outcomes Lab — core Power BI measures
+// Model: dim_institution (1) -> fact_institution_year (many) on unitid
+//        dim_institution (1) -> fact_equity_om (many) on unitid
+// Rates in IPEDS are institution-level percents; averages below are
+// institution-weighted unless a cohort-weighted variant is named.
+
+Median Grad Rate (150%) =
+MEDIAN ( fact_institution_year[grad_rate_150] )
+
+Median Retention (FT) =
+MEDIAN ( fact_institution_year[retention_ft] )
+
+Median Pell Share (UG) =
+MEDIAN ( fact_institution_year[pell_share_ug] )
+
+Institutions Reporting =
+DISTINCTCOUNT ( fact_institution_year[unitid] )
+
+Cohort-Weighted Grad Rate (150%) =
+DIVIDE (
+    SUMX ( fact_institution_year, fact_institution_year[gr_completers_150] ),
+    SUMX ( fact_institution_year, fact_institution_year[gr_cohort_adj] )
+) * 100
+
+Median Pell Gap, 8-Year (pp) =
+MEDIAN ( fact_equity_om[gap_8_pp] )
+
+Share of Institutions, Pell >= Non-Pell (%) =
+DIVIDE (
+    COUNTROWS ( FILTER ( fact_equity_om, fact_equity_om[gap_8_pp] <= 0 ) ),
+    COUNTROWS ( fact_equity_om )
+) * 100
