@@ -14,6 +14,8 @@ clustered into peer groups, modeled with gradient boosting + SHAP, and cut for e
 
 </div>
 
+▶️ **Watch the 45-second explainer:** [Retention Beats Wealth — Reel 01](https://youtube.com/shorts/YZjcskQMEV8) · also on [Instagram](https://www.instagram.com/reel/DexR1z2jqFq/)
+
 ---
 
 ## Why this exists
